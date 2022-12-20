@@ -2,15 +2,16 @@
 
 I have been closely following the premier league this year and I wanted to a EDA on the summer transfer window 2022-2023. The dataset is from Kaggle and it has all the transfers from the 2022-2023 soccer transfer window. 
 
-Main Questions:
+#### Main Questions:
 1. Who club spent the most money?
 2. Who rcub eceived the most money?
 3. Which League spent the most money?
 
-Technical Goals:
+#### Technical Goals:
 1. Learn how to do basic EDA with SQL to the same extent as my current knowledge in R 
+2. Learn how to use Microsoft SQL Server Management studio
+3. Learn how to import CSV files into Microsoft SQL Server Management Studio
 
-Note: One Problem that I had with this data set was the fact that it didn't have the nationality of the players. it had a variable country_from but it was the country in which they were playing in not necessarily there nationality. So it was hard for me to look at 
 ### What is market value?
 
 Starting off, I wanted to look at player's that were worth more than there actual market value. I don't really understand how market value was calculated. so I wanted to see how different the sale price was to the market value. 

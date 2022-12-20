@@ -60,4 +60,14 @@ order by fee desc
 -- country_from in this dataset is not the nationality/what country the player represents but what country the league they were from.
 
 -- teams that earned the most money
--- teams that lost the most money
+SELECT TOP 10 club_from, SUM(fee) as total_fees
+FROM dbo.soccer_transfers
+GROUP BY club_from
+ORDER BY total_fees desc
+
+-- teams that spent the most money
+SELECT TOP 10 club_to as Club, SUM(fee) as money_spent
+FROM dbo.soccer_transfers
+GROUP BY club_to
+ORDER BY money_spent desc
+

@@ -1,17 +1,17 @@
 select * from dbo.soccer_transfers
 
 -- Players that sold more for there market value
-select top(100) name, age, market_value, fee
+select top(100) name, club_to, age, market_value, fee
 from dbo.soccer_transfers
 where fee > market_value
 
 -- Players that were sold for less than there market value
-select top(100) name, age, market_value, fee
+select top(100) name, age,club_to,u market_value, fee
 from dbo.soccer_transfers
 where fee < market_value
 
 -- Top 10 most expensive layers
-select top(20) name, age, fee
+select top(20) name,club_to, age, fee
 from dbo.soccer_transfers
 order by fee desc
 
@@ -33,18 +33,6 @@ SELECT TOP 10 league_to, SUM(fee)
 FROM dbo.soccer_transfers
 GROUP BY league_to
 ORDER BY SUM(fee) DESC
-
--- Top 10 teams that spent the most money
-SELECT TOP 10 club_to, SUM(fee)
-FROM dbo.soccer_transfers
-GROUP BY club_to
-ORDER BY SUM(fee) DESC;
-
--- Top 10 teams that sold for the most money
-SELECT TOP 10 club_from, SUM(fee)
-FROM dbo.soccer_transfers
-GROUP BY club_from
-ORDER BY SUM(fee) DESC;
 
 -- What country had the most expensive players 
 SELECT TOP 10 country_from, SUM(fee)

@@ -3,8 +3,8 @@
 I have been closely following the premier league this year and I wanted to a EDA on the summer transfer window 2022-2023. The dataset is from Kaggle and it has all the transfers from the 2022-2023 soccer transfer window. 
 
 #### Main Questions:
-1. Who club spent the most money?
-2. Who rcub eceived the most money?
+1. What club spent the most money?
+2. What club received the most money?
 3. Which League spent the most money?
 
 #### Technical Goals:
